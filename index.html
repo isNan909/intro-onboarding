@@ -8,15 +8,102 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/intro.js@3.2.1/introjs.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/stylesheets/styles.css" />
   </head>
   <body>
-    <header><h2>This is our onboarding</h2></header>
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="./assets/images/coffeeLogo.png"
+              alt=""
+              width="124"
+              height="51"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="flex-fill search-bar"
+            data-hint="Here you can get all the variety of coffee."
+            data-hintposition="bottom-middle"
+          >
+            <form class="d-flex flex-row flex-fill">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Type to search your coffee"
+                aria-label="Search"
+              />
+              <button class="btn btn-primary text-nowrap" type="submit">
+                Search Coffee
+              </button>
+            </form>
+          </div>
+          <div class="d-inline-flex align-items-end">
+            <ul>
+              <li
+                data-hintposition="bottom-right"
+                data-hint="You can find all your notification in the navbar here."
+              >
+                <svg
+                  class="bellSvg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"
+                  ></path>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div
+      class="chat-sticky align-items-center d-flex align-center"
+      data-hint="You can reach out for support in the chat area."
+      data-hintposition="bottom-center"
+    >
+      <svg
+        width="30"
+        height="30"
+        view-box="0 0 30 30"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M27 15C27 20.799 21.627 25.5 15 25.5C12.8701 25.5089 10.7693 25.0047 8.8755 24.03L3 25.5L5.007 20.8155C3.7395 19.1505 3 17.151 3 15C3 9.201 8.373 4.5 15 4.5C21.627 4.5 27 9.201 27 15ZM10.5 13.5H7.5V16.5H10.5V13.5ZM22.5 13.5H19.5V16.5H22.5V13.5ZM13.5 13.5H16.5V16.5H13.5V13.5Z"
+          fill="white"
+        />
+      </svg>
+      <p class="fw-bolder">Chat for Support</p>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/intro.js@3.2.1/intro.min.js"></script>
-    <script src="./assets/scripts/main.js"></script>
+    <script src="./assets/scripts/index.js"></script>
   </body>
 </html>
